@@ -67,7 +67,7 @@ class Todos{
     }
 
     #removeFromArray = (id) => {
-        const arrayWithoutRemoved = this.#tasks.filter(task => task.id !== id)
+        const arrayWithoutRemoved = this.#tasks.filter(task => task.getId() !== id)  // use getId()
         this.#tasks = arrayWithoutRemoved
     }
 }
